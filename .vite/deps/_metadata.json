@@ -1,0 +1,40 @@
+{
+  "hash": "c3814a29",
+  "configHash": "1542ebbe",
+  "lockfileHash": "f27b09fe",
+  "browserHash": "727b61c6",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "aa7c7bf3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "4ca4d506",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "415ec084",
+      "needsInterop": false
+    },
+    "react-dom": {
+      "src": "../../node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "ee131d61",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-GWPMIERD": {
+      "file": "chunk-GWPMIERD.js"
+    },
+    "chunk-AK4TLUUY": {
+      "file": "chunk-AK4TLUUY.js"
+    }
+  }
+}

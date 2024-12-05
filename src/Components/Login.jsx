@@ -1,9 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { Link, useNavigate } from "react-router-dom"
-import React, { useState , } from 'react';
+import React, { useState , useContext} from 'react';
+import { UserContext } from "./context/UserContext";
+
 
 
 export const Login = () => {
+
   const [userCred , setUserCred] = useState({
     email:"",
     password:""
@@ -12,8 +15,12 @@ export const Login = () => {
     type:"",
     text:""
   })
+  
+const loggedInData = useContext(UserContext);
+
 
   const navigate = useNavigate();
+
   function handleInput(event) {
     setUserCred((prev)=>{
       return {...prev,[event.target.name]:event.target.value}
@@ -52,9 +59,11 @@ export const Login = () => {
     })
     .then((data)=>{
       console.log(data);
+
       if(data.token!==undefined){
-        localStorage.setItem("user",JSON.stringify(data))
-        navigate("/track")
+        localStorage.setItem("user",JSON.stringify(data));
+        loggedInData.setLoggedUser(data)
+        navigate("/track");
       }else{
         navigate("/login")
       }

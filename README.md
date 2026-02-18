@@ -1,4 +1,4 @@
-Nutrify – Your Personal Nutrition Tracker 🍎🥗
+Nutrify – Your Personal Nutrition Tracker 
 Nutrify is a powerful and intuitive nutrition tracking app that helps you monitor your daily food intake, track calories, and maintain a healthy diet. Whether you want to lose weight, gain muscle, or simply eat healthier, NutriTrack makes it easy to log your meals and track your progress over time.
 
 Key Features:
